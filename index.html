@@ -1,0 +1,315 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>青柠旅行</title>
+		<link rel="stylesheet" type="text/css" href="../static/mui/css/mui.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/core.css"/>
+		<script src="../static/mui/js/mui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/core.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="../static/myfonts/css/fonts.css"/>
+	</head>
+	<body>
+		<div class="mui-content" >
+			<!--活动分类以及活动时间-->
+			<ul class="event-list-type">
+				<li>
+					<a id="index-type" href="#event-type" class="type">全部<i class="mui-icon mui-icon-arrowdown ft_12"></i></a>
+					<a id="index-date" href="#event-date" class="date">出行日期<i class="mui-icon mui-icon-arrowdown ft_12"></i></a>
+				</li>
+
+			</ul>
+			<a href="myorder.html" class="icons-contact2 index-order"></a>
+			
+			
+			
+			<!--活动分类-->
+			<div id="event-type" class="mui-hidden">
+				<div class="event-type-back"></div>
+				<div class="event-type-box">
+					<ul class="mui-table-view type-scroll-wrapper">
+						<li class="mui-table-view-cell active">
+							全部
+						</li>
+						<li class="mui-table-view-cell">
+							短线活动
+						</li>
+						<li class="mui-table-view-cell">
+							长线活动
+						</li>
+						<li class="mui-table-view-cell">
+							出境活动
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--出行日期--日历-->
+			<div id="event-date" class="mui-hidden">
+				<div class="event-type-back"></div>
+				<div class="event-date-box">
+					<div class="calendar—title">
+						<label id="this-date"></label>
+						<span class="prev-month" id="prev-month"><i class="mui-icon mui-icon-arrowleft c_grey"></i></span>
+						<span class="next-month" id="next-month"><i class="mui-icon mui-icon-arrowright c_grey"></i></span>
+					</div>
+					<table class="calendar clear">
+						<thead>
+						<tr>
+							<th>日</th>
+							<th>一</th>
+							<th>二</th>
+							<th>三</th>
+							<th>四</th>
+							<th>五</th>
+							<th>六</th>
+						</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+					<div class="calendar-footer-line"></div>
+					<div class="calendar-footer">
+						<span class="title">按月显示</span>
+						<span class="triangle"></span>
+						<ul class="calendar-month">
+							<li>
+								<span class="month-more month-more1 activem"></span>
+								<span class="month-more month-more2"></span>
+								<span class="month-more month-more3"></span>
+								<div class="mui-pull-right"><span class="no-limit">全部</span></div>
+
+							</li>
+							
+						</ul>
+					</div>
+					<div class="calendar-footer-line"></div>
+					<div class="calendar-footer-info">
+						<span class="title">温馨提示&nbsp;</span>
+						<span class="triangle"></span>
+						<span class="calendar-info"><i class="info-one"></i>活动日</span>
+						<span class="calendar-info"><i class="info-two"></i>当前日期</span>
+						<span class="calendar-info"><i class="info-three"></i>选中状态</span>
+						
+					</div>
+				</div>
+				
+				
+			</div>
+	
+			
+			
+			<!--活动列表遍历便签-->
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<div class="event-list-box">
+						<!--循环开始-->
+						<div class="event-list">
+							<a href="detail.html" class="event-list-img">
+								<img src="../static/img/index_02.png"/>
+								<div class="event-list-imgb"></div>
+								<div class="event-list-imgw">
+									<span class="icons-position3 address">&nbsp;北京-灵山风景区</span>
+									<span class="btn">已报名20人</span>
+								</div>
+							</a>
+							
+							<div class="event-list-con">
+								<a href="detail.html"><p class="title">【两日】北京之巅，从登灵山到一览群山徒步之旅</p></a>
+								<ul class="mui-clearfix mgt5">
+									<li class="mui-pull-left time "><span class="icons-time"></span>&nbsp;活动时间：2016-06-01 <a class="con-more mui-hidden">更多</a></li>
+									<li class="mui-pull-right  mgt5"><span class="price">￥&nbsp;232</span>起</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="event-list">
+							<a href="detail.html" class="event-list-img">
+								<img src="../static/img/index_02.png"/>
+								<div class="event-list-imgb"></div>
+								<div class="event-list-imgw">
+									<span class="icons-position3 address">&nbsp;北京-灵山风景区</span>
+									<span class="btn">已报名20人</span>
+								</div>
+							</a>
+							
+							<div class="event-list-con">
+								<a href="detail.html"><p class="title">【两日】北京之巅，从登灵山到一览群山徒步之旅</p></a>
+								<ul class="mui-clearfix mgt5">
+									<li class="mui-pull-left time "><span class="icons-time"></span>&nbsp;活动时间：2016-06-01 <a class="con-more">更多</a></li>
+									<li class="mui-pull-right  mgt5"><span class="price">￥&nbsp;232</span></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="event-list">
+							<a href="detail.html" class="event-list-img">
+								<img src="../static/img/index_02.png"/>
+								<div class="event-list-imgb"></div>
+								<div class="event-list-imgw">
+									<span class="icons-position3 address">&nbsp;北京-灵山风景区</span>
+									<span class="btn">已报名20人</span>
+								</div>
+							</a>
+							
+							<div class="event-list-con">
+								<a href="detail.html"><p class="title">【两日】北京之巅，从登灵山到一览群山徒步之旅</p></a>
+								<ul class="mui-clearfix mgt5">
+									<li class="mui-pull-left time "><span class="icons-time"></span>&nbsp;活动时间：2016-06-01 <a class="con-more mui-hidden">更多</a></li>
+									<li class="mui-pull-right  mgt5"><span class="price">￥&nbsp;232</span></li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		
+		
+	</body>
+	
+	
+	<script type="text/javascript"> 
+	   	$(function(){ 
+			mui.init();
+			//初始化单页的区域滚动
+			mui('.mui-scroll-wrapper').scroll();
+			})
+	
+		//活动分类以及活动出行日期的点击效果
+		$(function(){ 
+			 var info = document.getElementById("index-type");
+			 var infodate = document.getElementById("index-date");
+			 var dhtml='<i class="mui-icon mui-icon-arrowdown ft_12"></i>';
+
+			$(".event-list-type .type").toggle(function(){ 
+				
+				$(this).addClass('active');
+				if (!$('#event-type').hasClass('mui-hidden')){ 
+					$('body').find('#event-type').addClass('mui-hidden');
+					$(this).removeClass('active');
+				}else{ 
+					$('body').find('#event-type').removeClass('mui-hidden');
+					$("body").css({overflow:"hidden"}); 
+				}
+				$('#event-date').addClass('mui-hidden');
+				$('.event-list-type .date').removeClass('active');
+			},function(){ 
+				$(this).addClass('active');
+				if(!$('#event-type').hasClass('mui-hidden')){
+					$('body').find('#event-type').addClass('mui-hidden');
+					$(this).removeClass('active');
+				}else{ 
+					$('body').find('#event-type').removeClass('mui-hidden');
+					$("body").css({overflow:"hidden"}); 
+					
+				}
+				
+				$('#event-date').addClass('mui-hidden');
+				$('.event-list-type .date').removeClass('active');
+				
+			}); 
+			
+			$(".event-list-type .date").toggle(function(){ 
+				 
+				$(this).addClass('active');
+	
+				if (!$('#event-date').hasClass('mui-hidden')){ 
+					
+					$('body').find('#event-date').addClass('mui-hidden');
+					$(this).removeClass('active');
+				}else{ 
+					$('body').find('#event-date').removeClass('mui-hidden');
+					$("body").css({overflow:"hidden"}); 
+					
+					
+				}
+				$('#event-type').addClass('mui-hidden');
+				$('.event-list-type .type').removeClass('active');
+			},function(){ 
+				$(this).addClass('active');
+				if(!$('#event-date').hasClass('mui-hidden')){ 
+					$('body').find('#event-date').addClass('mui-hidden');
+					$(this).removeClass('active');
+				}else{ 
+					$('body').find('#event-date').removeClass('mui-hidden');
+					$("body").css({overflow:"hidden"}); 
+					
+				}
+				
+				$('#event-type').addClass('mui-hidden');
+				$('.event-list-type .type').removeClass('active');
+				
+			});
+			
+			$(".event-type-box ul li").click(function(){
+			 	info.innerHTML =$(this).text()+dhtml;
+			 	$('body').find('#event-type').addClass('mui-hidden');
+			 	$(this).addClass('active').siblings().removeClass('active');
+			 	$('.event-list-type .type').removeClass('active');
+			})
+			
+			//活动分类以及出行日期--点击任意出弹层消失
+			$('.event-type-back').click(function(){
+				$('#event-type').addClass('mui-hidden');
+				$('#event-date').addClass('mui-hidden');
+			})
+			
+
+			//具体日期--活动
+			$("body").on("click",".calendar td", function(e){
+				var month = $("#this-date").text();
+			 	infodate.innerHTML = month+$(this).text()+dhtml;
+			 	$('body').find('#event-date').addClass('mui-hidden');
+			 	$('.event-list-type .date').removeClass('active');
+			})
+			
+			//全部活动
+			$(".calendar-month .no-limit").click(function(){
+			 	infodate.innerHTML = $(this).text()+dhtml;
+			 	$('body').find('#event-date').addClass('mui-hidden');
+			 	$('.event-list-type .date').removeClass('active');
+			 	
+			})
+			
+			//整个月份活动
+			$(".calendar-month .month-more").click(function(){
+				var today=new Date();
+				var year = today.getFullYear();
+			 	infodate.innerHTML = year+"年"+$(this).text()+dhtml;
+			 	$('body').find('#event-date').addClass('mui-hidden');
+			 	$('.event-list-type .date').removeClass('active');
+			 	
+			})
+			
+			//当前月份灰色日期不可点击
+			$(".nmonth").parent().addClass("nmonth-p");
+			$(".pmonth").parent().addClass("nmonth-p");
+			$(".nmonth-p").parent().css('pointer-events','none');
+			
+			
+			$(document).on("click",".month-more",function(){
+			 	$(this).addClass('activem').siblings(".month-more").removeClass("activem");
+			})
+			
+			$(".event-list:first").css("margin-top","0");
+			
+			//活动类型弹层高度
+			var htype = window.screen.height-44;
+			$(".type-scroll-wrapper").css("max-height", htype+"px");
+			
+		});
+		
+		
+
+	</script> 
+	
+
+</html>
